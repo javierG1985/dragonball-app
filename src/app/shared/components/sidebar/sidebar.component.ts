@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  mobileMenuOpen = input(false);
+  mobileMenuOpen = input<boolean>(false);
   toggleMenu = output<void>();
   closeMenu = output<void>();
 

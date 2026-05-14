@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  mobileMenuOpen = input(false);
+  mobileMenuOpen = input<boolean>(false);
   toggleMenu = output<void>();
 
   constructor() {}

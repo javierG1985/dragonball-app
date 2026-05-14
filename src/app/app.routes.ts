@@ -9,7 +9,7 @@ export const routes: Routes = [
       {
         path: 'dragonball',
         loadComponent: () =>
-          import('./features/dragonball/ui/pages/dragonball-list/dragonball-list.component'),
+          import('./features/dragonball/ui/pages/dragonball-page/dragonball-page.component'),
       },
       {
         path: '**',
