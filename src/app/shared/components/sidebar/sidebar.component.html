@@ -1,0 +1,36 @@
+<aside
+  class="fixed inset-y-0 left-0 z-30 w-72 transform overflow-y-auto border-r border-white/10 bg-gray-900 px-4 pb-6 pt-4 text-slate-100 shadow-xl transition duration-300 ease-in-out md:sticky md:top-0 md:h-screen md:translate-x-0 md:shadow-none"
+  [ngClass]="{ 'translate-x-0': mobileMenuOpen(), '-translate-x-full': !mobileMenuOpen() }"
+>
+  <div class="flex items-center justify-between px-2 md:hidden">
+    <span class="text-lg font-semibold uppercase tracking-[0.18em] text-white">Menu</span>
+    <button
+      type="button"
+      class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 bg-slate-950 text-slate-200 hover:bg-slate-800"
+      (click)="onCloseMenu()"
+      aria-label="Cerrar menú"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="mt-6 flex items-center gap-3 px-2">
+    <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Logo" class="h-10 w-10 rounded-2xl bg-white/10 p-2" />
+    <div>
+      <p class="text-sm font-semibold text-white">Dragonball App</p>
+      <p class="text-xs text-slate-400">Arquitectura limpia</p>
+    </div>
+  </div>
+
+  <nav class="mt-10 space-y-2 px-2">
+    <a href="#" class="block rounded-2xl px-4 py-3 text-sm font-medium text-white transition hover:bg-slate-800">Dashboard</a>
+    <a href="#" class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-300 transition hover:bg-slate-800">Team</a>
+    <a href="#" class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-300 transition hover:bg-slate-800">Projects</a>
+    <a href="#" class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-300 transition hover:bg-slate-800">Calendar</a>
+    <a href="#" class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-300 transition hover:bg-slate-800">Reports</a>
+  </nav>
+
+ 
+</aside>
